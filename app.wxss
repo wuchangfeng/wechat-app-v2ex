@@ -1,0 +1,92 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30rpx;
+    background-color: #56abe4;
+    border-bottom: 1px solid #eee;
+}
+
+.topic-item {
+    padding:30rpx;
+    border-bottom: 1.5px solid #eee;
+}
+
+.topic-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.member-avatar {
+  width: 96rpx;
+  height: 96rpx;
+  margin-right: 30rpx;
+  padding-top: 40rpx;
+  border-radius: 5rpx;
+}
+
+.topic-info {
+    flex:1;
+    font-size: 24rpx;
+}
+
+.topic-inner {
+    display: flex;
+    align-items: center;
+    color:#777;
+}
+
+.topic-title {
+    height:140rpx;
+    line-height: 1.4;
+    box-sizing: border-box;
+    padding-top: 20rpx;
+    overflow:hidden;
+    font-size: 28rpx;
+}
+
+.topic-left {
+    flex:1;
+}
+
+.node-name {
+    display: inline-block;
+    margin-right: 20rpx;
+    margin-top: 12rpx;
+    padding:5rpx 10rpx;
+    background-color: #777;
+    border-radius: 5rpx;   
+    color:#FFF; 
+}
+
+.reply-num {
+    display: inline-block;
+    margin-left: 50rpx;
+    padding:10rpx;
+    height:22rpx;
+    background-color: #777;
+    border-radius: 5rpx;   
+    color:#FFF; 
+}
+
+.member-nickname {
+  margin-top: 12rpx;
+    padding:5rpx 10rpx;
+    background-color: #777;
+    border-radius: 5rpx;   
+    color:#FFF; 
+}
+
+.nickname-nodename {
+  color: #777;
+}

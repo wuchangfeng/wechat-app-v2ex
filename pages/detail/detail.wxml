@@ -1,0 +1,48 @@
+<!--detail.wxml-->
+<view class="container">
+<view class="topic-detail">
+<view class="topic-owner">
+
+<!--话题发布者头像-->
+<image class="owner-avatar" src="{{detail.member.avatar_normal}}" id="{{detail.member.id}}" bindtap="showUserInfo">
+</image>
+
+<!--话题标题-->
+<view class="topic-tit">{{detail.title}}
+</view>
+</view>
+
+<!--话题详情-->
+<view class="topic-info">
+<text>{{detail.member.username}}</text>
+<text class="topic-created">{{detail.created}}</text>
+</view>
+
+<!--话题描述内容-->
+<view class="topic-desc">
+<text>{{detail.content}}</text>
+</view>
+</view>
+
+<!--回复列表相关 循环-->
+<view class="replies">
+<block wx:for="{{replies}}">
+<view class="replies-item" id="{{item.id}}">
+<view class="reply-owner">
+<!--回复列表的头像-->
+<image class="reply-avatar" src="{{item.member.avatar_normal}}">
+</image>
+<text class="reply-name">{{item.member.username}}</text>
+<text class="reply-time">{{item.created}}</text>
+</view>
+<view class="reply-content">{{item.content}}
+</view>
+</view>
+</block>
+</view>
+
+<!--loading 提示框-->
+<loading hidden="{{hidden}}">
+    加载中...
+</loading>
+</view>
